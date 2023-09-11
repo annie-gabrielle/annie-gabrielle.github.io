@@ -1,0 +1,30 @@
+import 'animate.css';
+
+body{
+    background-color: #FFF9F6;
+}
+
+.center {
+    text-align: center;
+}
+
+h1{
+    color: #5c2701;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Recursive', sans-serif;
+    font-size: 600%;
+}
+
+p{
+    color: #5c2701;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Recursive', sans-serif;
+    font-size: 300%;
+}
+
+.h1-titulo{
+    align-self:center;
+}
+.imagegeof{
+    width: 10%;
+}

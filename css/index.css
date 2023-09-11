@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+   background-image:url(../images/background2.png);
+    padding: 0;
+}
+
+/*TELA INICIAL GR2INV
+   background-color: #333;
+    background-image: radial-gradient(rgb(162, 113, 113) 8px,rgb(117, 144, 158) 10px, rgb(173, 205, 156) 30px, transparent);
+    background-position: -50px -1px;
+    background-size: 40px 40px;
+*/
+
+/* PRETO E BRANCO
+background-image: radial-gradient(rgb(253, 253, 253) 10px, transparent );
+background-position: -50px -1px;
+background-size: 40px 40px;
+*/
+
+/* VERDE, AZUL, VERMELHO E PRETO QUE PARECEM SE MEXER
+    background-image: radial-gradient(rgb(172, 91, 91) 3px,rgb(80, 154, 193) 10px, rgb(130, 196, 94) 3px, transparent );
+    background-position: -50px -1px;
+    background-size: 40px 40px;
+*/
+
+header {
+    background-color: #4a291c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/*TELA HEADER
+  background-color: #8b5742;
+*/
+
+
+.menu ul li{
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin-right:5%;
+    margin-left:5%;
+    align-self: center;
+}
+
+.menu ul li:hover{
+    background-image: url("../images/yolo.png");
+    background-position: left ;
+}
+
+/* GARANTE A SUAVIDADE DO HEADER*/
+.menu ul li a:hover{
+    background-color: #694b3f;
+    transition: 0.5s ease-in-out;
+    margin-right: 10px;
+}
+/* GARANTE A CONFIGURAÇÃO DO a DO HEADER*/
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+}
+
+
+main {
+    padding: 20px;
+}
+
+#arquivos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.imagegeof img{
+    width: 50%;
+    border-radius: 15%;
+    text-align: center;
+   /* animation: imagegeofisica 1.5s infinite ease-in-out;*/
+
+    display: block; /* Fazer a imagem se comportar como um bloco */
+    margin: 40px auto; /* Centralizar horizontalmente a imagem */
+}
+
+
+
+.item {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.item img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 450px;
+    height: 400px;
+    background-color: #ddd;
+}
+
+
+
+.post-it {
+ width:350px;
+ height:340px;
+ position:relative;
+ background:rgb(219, 192, 87);
+ overflow:hidden;
+ margin:30px auto;
+ padding:20px;
+ border-radius:0 0 0 30px/45px;
+ box-shadow:
+   inset 0 -40px 40px rgba(0,0,0,0.2),
+   inset 0 25px 10px rgba(0,0,0,0.2),
+   0 5px 6px 5px rgba(0,0,0,0.2);
+ font-family: 'Permanent Marker', cursive;
+ line-height:1.7em;
+ font-size:19px;
+ color:#130d6b;
+}
+
+
+.post-it-eu {
+    width:780px;
+ height:440px;
+ position:relative;
+ background:#ff7eb9;
+ overflow:hidden;
+ margin:30px auto;
+ padding:20px;
+ border-radius:0 0 0 30px/45px;
+ box-shadow:
+   inset 0 -40px 40px rgba(0,0,0,0.2),
+   inset 0 25px 10px rgba(0,0,0,0.2),
+   0 5px 6px 5px rgba(0,0,0,0.2);
+ font-family: 'Permanent Marker', cursive;
+ line-height:1.7em;
+ font-size:19px;
+ color:#130d6b;
+}
+/*  background:#ffa; AMARELO
+
+    background:rgb(219, 192, 87); POST-IT AMARELO MAIS VELHO
+
+    background: #ff7eb9; ROSA CLARO
+    
+    background: #7afcff; AZUL
+
+
+*/
+
+.post-it img{
+    width:35%;
+    align-self: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#fofolista img{
+    border-radius: 0;
+    }
+
+#ods img{
+    border-radius: 0;
+    width:75%;
+}
+#yolo img{
+    border-radius: 41%;
+    width:36%;
+}
+#formulario img{
+    width: 45%;
+}
+#grinv2d img{
+    width:37%;
+    margin-top: 0;
+}
+
+#Annie{
+    display: flex;
+    align-items: center;
+}
+
+.eu img{
+    width:110%;
+    align-self: left;
+    animation: imagegeofisica 1.5s infinite ease-in-out;
+}
+
+#footer-eu{
+    text-align: left;
+    align-self: left;
+}
+
+footer img{
+    align-self: right;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+/* ANIMAÇÕES COM CSS*/
+
+.animate__animated.animate__bounce {
+    --animate-duration: 10s;
+  }
+
+@keyframes imagegeofisica{
+    50%{
+        transform: translateY(-5%);
+    }}
+
+
+
+
+/* RESPONSIVIDADE COM CSS*/
+
+@mediaquery screen and (max-width 767px){
+
+    header {
+        background-color: #4a291c;
+        color: white;
+        text-align: center;
+        width:100%;
+    }
+
+    .menu nav li{
+        width:100%;
+    }
+    .menu ul li{
+        display: block;
+        margin-right:8%;
+        align-self:center;
+    }
+    
+    .menu ul li:hover{
+        background-image: url("../images/yolo.png");
+        background-position: left ;
+        text-decoration:underline;
+    }
+    
+    /* GARANTE A CONFIGURAÇÃO DO a DO HEADER*/
+    nav ul li a {
+        color: white;
+        font-size: 200%;
+        padding:2%;
+    }
+    
+
+
+
+}
+    
+
+
+
