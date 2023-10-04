@@ -28,7 +28,7 @@ background-size: 40px 40px;
 */
 
 header {
-    background-color: #4a291c;
+    background: linear-gradient(to left, #4a291c,rgb(238, 171, 135));
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -78,15 +78,22 @@ main {
     justify-content: space-between;
 }
 
+.imagegeof{
+    display: flex;
+    align-items: center;
+}
+
 
 .imagegeof img{
     width: 50%;
     border-radius: 15%;
-    text-align: center;
+   /* text-align: center; */
    /* animation: imagegeofisica 1.5s infinite ease-in-out;*/
 
     display: block; /* Fazer a imagem se comportar como um bloco */
-    margin: 40px auto; /* Centralizar horizontalmente a imagem */
+    margin-left:21%; /* Centralizar horizontalmente a imagem */
+    margin-top: 2%;
+    margin-bottom: 3%;
 }
 
 
@@ -130,23 +137,43 @@ main {
 }
 
 
-.post-it-eu {
-    width:780px;
- height:440px;
- position:relative;
- background:#ff7eb9;
- overflow:hidden;
- margin:30px auto;
- padding:20px;
- border-radius:0 0 0 30px/45px;
- box-shadow:
-   inset 0 -40px 40px rgba(0,0,0,0.2),
-   inset 0 25px 10px rgba(0,0,0,0.2),
-   0 5px 6px 5px rgba(0,0,0,0.2);
- font-family: 'Permanent Marker', cursive;
- line-height:1.7em;
- font-size:19px;
- color:#130d6b;
+
+.post-it-gr {
+    width:350px;
+    height:450px;
+    position:relative;
+    background:rgb(219, 192, 87);
+    overflow:hidden;
+    margin:30px auto;
+    padding:20px;
+    border-radius:0 0 0 30px/45px;
+    box-shadow:
+      inset 0 -40px 40px rgba(0,0,0,0.2),
+      inset 0 25px 10px rgba(0,0,0,0.2),
+      0 5px 6px 5px rgba(0,0,0,0.2);
+    font-family: 'Permanent Marker', cursive;
+    line-height:1.7em;
+    font-size:19px;
+    color:#130d6b;
+}
+
+.post-it-aviso {
+    width:350px;
+    height:340px;
+    position:relative;
+    background:#ff7eb9;
+    overflow:hidden;
+    margin:30px auto;
+    padding:20px;
+    border-radius:0 0 0 30px/45px;
+    box-shadow:
+      inset 0 -40px 40px rgba(0,0,0,0.2),
+      inset 0 25px 10px rgba(0,0,0,0.2),
+      0 5px 6px 5px rgba(0,0,0,0.2);
+    font-family: 'Permanent Marker', cursive;
+    line-height:1.7em;
+    font-size:19px;
+    color:#130d6b;
 }
 /*  background:#ffa; AMARELO
 
@@ -164,6 +191,12 @@ main {
     align-self: center;
     display: block;
     margin: 0 auto;
+}
+.post-it-aviso img{
+    width:45%;
+    align-self: center;
+    display: block;
+    margin: 0 auto;   
 }
 
 #fofolista img{
@@ -192,30 +225,62 @@ main {
 }
 
 .eu img{
-    width:110%;
     align-self: left;
     animation: imagegeofisica 1.5s infinite ease-in-out;
 }
 
-#footer-eu{
-    text-align: left;
-    align-self: left;
-}
-
-footer img{
-    align-self: right;
-}
-
 footer {
-    text-align: center;
-    padding: 10px 0;
+    margin: 0;
+    margin:auto;
+    width:100%;
+    background: linear-gradient(to right, #4a291c,rgb(238, 171, 135));
+    display: inline-block;
+    color: white;
+}
+
+.footer footer img{
+    vertical-align: middle; /* Alinha verticalmente a imagem com o texto ao redor */
+    background-color: white;
+  }
+
+.texto-footer{
+    align-items:center;
+}
+
+footer img {
+    width: 30%;
+    float:right;
+    margin-left: 40px;
+    margin-right: 25px;
+}
+footer p{
+    font-size: 23px;
+}
+
+footer a{
+    color: rgb(255, 254, 254);
+}
+
+footer a:hover{
+    background-image: url("../images/yolo.png");
+    background-position: left ;
+    transition: 0.7s ease-in-out;
+    margin-left: 10px;
+    opacity: 80%;
 }
 
 
 
+footer h2,p{
+    margin-left: 30px;
+}
 /* ANIMAÇÕES COM CSS*/
 
-.animate__animated.animate__bounce {
+.animate__animated.animate__fadeInLeft{
+    --animate-duration: 10s;
+  }
+
+  .animate__animated.animate__bounce {
     --animate-duration: 10s;
   }
 
@@ -229,42 +294,109 @@ footer {
 
 /* RESPONSIVIDADE COM CSS*/
 
-@mediaquery screen and (max-width 767px){
-
+/* Responsividade para telas menores (máximo de 767px de largura) */
+@media screen and (max-width: 767px) {
     header {
         background-color: #4a291c;
         color: white;
         text-align: center;
-        width:100%;
+        width: 100%;
     }
 
-    .menu nav li{
-        width:100%;
+    .menu ul {
+        text-align: center;
     }
-    .menu ul li{
+
+    .menu ul li {
         display: block;
-        margin-right:8%;
-        align-self:center;
+        margin: 0;
+        padding: 10px 0;
     }
-    
-    .menu ul li:hover{
-        background-image: url("../images/yolo.png");
-        background-position: left ;
-        text-decoration:underline;
-    }
-    
-    /* GARANTE A CONFIGURAÇÃO DO a DO HEADER*/
-    nav ul li a {
+
+    .menu ul li a {
         color: white;
-        font-size: 200%;
-        padding:2%;
+        font-size: 150%;
+    }
+
+    .imagegeof img {
+        width: 100%; /* Reduzir a largura da imagem para telas menores */
+        margin-left: 1%; /* Ajustar a margem esquerda para centralizar a imagem */
+    }
+
+    .post-it, .post-it-aviso, .post-it-gr {
+        width: 90%; /* Reduzir a largura dos post-its para telas menores */
+        margin: 10px auto; /* Centralizar os post-its horizontalmente */
+    }
+
+    .post-it img, .post-it-aviso img, #fofolista img, #ods img, #yolo img, #formulario img, #grinv2d img {
+        width: 40%; /* Reduzir o tamanho das imagens dos post-its para telas menores */
+    }
+
+    footer img {
+        width: 100%; /* Reduzir o tamanh    o das imagens no rodapé para telas menores */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 842px) {
+    .menu ul li {
+        display: inline-block; /* Mostrar os itens do menu em uma linha */
+        margin: 16px; /* Adicionar margem entre os itens do menu */
+    }
+}
+
+@media screen and (min-width: 1008px) and (max-width: 1012px) {
+    .menu ul li {
+        display: inline-block; /* Mostrar os itens do menu em uma linha */
+        margin-right: 10px; /* Adicionar margem entre os itens do menu */
+    }
+}
+
+@media screen and (max-width: 1011px) {
+    .menu ul li {
+        margin-right: 0%; /* Reduzir a margem entre os itens do menu */
+    }
+
+    .imagegeof img {
+        width: 80%; /* Reduzir o tamanho da imagem para tablets e iPads */
+        margin-left: 10%;
+    }
+
+    .post-it, .post-it-aviso, .post-it-gr {
+        width: 65%; /* Reduzir o tamanho dos post-its para tablets e iPads */
+        height: 55%;
+    }
+
+    .post-it img, .post-it-aviso img, #fofolista img, #ods img, #yolo img, #formulario img, #grinv2d img {
+        width: 38%; /* Reduzir o tamanho das imagens nos post-its para tablets e iPads */
+    }
+
+        footer img {
+            width: 83%; /* Reduzir o tamanho das imagens no rodapé para tablets e iPads */  
+            margin-right:10% ;
+        }
+
     }
     
-
-
-
-}
-    
+    @media screen and (min-width: 1238px) {
+        /* Conteúdo específico para telas grandes */
+        
+        /* Adicione um espaço em branco no final da página para acomodar o footer */
+        body {
+            margin-bottom: 100px; /* Ajuste conforme necessário para evitar sobreposição com o footer */
+        }
+        .imagegeof img {
+            margin-left: 25%;
+        }
+        
+        footer {
+            width: 100%;
+            background: linear-gradient(to right, #4a291c, rgb(238, 171, 135));
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: -100px;
+        }
+    }
 
 
 
