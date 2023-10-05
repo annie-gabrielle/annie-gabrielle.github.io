@@ -20,7 +20,7 @@ p {
     color: #FF7D80;
     font-family: 'Aguafina Script', cursive;
     font-family: 'Recursive', sans-serif;
-    padding: 5%;
+    padding: 3%;
     font-size: 180%; /* Reduzi o tamanho da fonte para 2rem (20px) */
     margin-bottom: 2rem; /* Adicionei um espaço inferior maior entre os parágrafos */
     background-color: #e9e0d5;
@@ -36,10 +36,10 @@ p {
 }
 
 .carousel {
-    max-width: 30%; /* Reduzi a largura máxima do carrossel para 60% da largura da tela */
+    max-width: 30%; 
     background-color: #FF7D80;
     padding: 4%;
-    margin-left:32%;
+    margin-left:35%;
     margin-top:5%;
     margin-bottom: 3%;
 }
