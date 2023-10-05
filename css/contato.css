@@ -26,3 +26,6 @@ body::before {
   color: white;
 }
 
+.btn btn-primary{
+    color:#4a291c ;
+}
