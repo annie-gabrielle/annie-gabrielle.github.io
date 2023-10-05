@@ -154,8 +154,14 @@ main {
     font-family: 'Permanent Marker', cursive;
     line-height:1.7em;
     font-size:19px;
+    text-align: left;
     color:#130d6b;
 }
+
+.post-it-gr img {
+    display: block; /* Remove espaços em branco ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  }
 
 .post-it-aviso {
     width:350px;

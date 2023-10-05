@@ -1,0 +1,45 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+body {
+    background: radial-gradient(#FFF9F6,#FF7D80) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+p {
+    color: #FF7D80;
+    font-family: 'Aguafina Script', cursive;
+    font-family: 'Recursive', sans-serif;
+    padding: 5%;
+    font-size: 180%; /* Reduzi o tamanho da fonte para 2rem (20px) */
+    margin-bottom: 2rem; /* Adicionei um espaço inferior maior entre os parágrafos */
+    background-color: #e9e0d5;
+    text-decoration: 'bold';
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel {
+    max-width: 30%; /* Reduzi a largura máxima do carrossel para 60% da largura da tela */
+    background-color: #FF7D80;
+    padding: 4%;
+    margin-left:32%;
+    margin-top:5%;
+    margin-bottom: 3%;
+}
