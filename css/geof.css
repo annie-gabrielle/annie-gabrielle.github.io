@@ -1,7 +1,19 @@
-import 'animate.css';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
 body{
-    background-color: #FFF9F6;
+    background-image:url(../images/background2.png);
+  
+}
+body::before {
+    content: ''; /* Adiciona conteúdo vazio para o pseudo-elemento */
+    position: absolute; /* Define a posição absoluta para que o pseudo-elemento cubra todo o body */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background2.png);
+    opacity: 0.3; /* Ajuste a opacidade conforme necessário (de 0 a 1) */
+    z-index: -1; /* Define uma camada abaixo do conteúdo do body */
 }
 
 .center {
@@ -9,6 +21,8 @@ body{
 }
 
 h1{
+    background-color: aliceblue;
+    border-radius:70%;
     color: #5c2701;
     font-family: 'Aguafina Script', cursive;
     font-family: 'Recursive', sans-serif;
@@ -19,12 +33,75 @@ p{
     color: #5c2701;
     font-family: 'Aguafina Script', cursive;
     font-family: 'Recursive', sans-serif;
-    font-size: 300%;
+    font-size: 200%;
+    margin: 4%;
+    padding: 3%;
+    border-radius: 20%;
+}
+
+p{
+    background-color: aliceblue;
+    border-radius: 20%;
+}
+
+ul{
+    font-size: 200%;
+    color: #5c2701; 
+    margin: 4%;
+}
+
+.texto{
+    background-color: aliceblue;
+    margin: 4%;
+    padding: 1%;
+    border-radius:22%;
 }
 
 .h1-titulo{
     align-self:center;
 }
-.imagegeof{
-    width: 10%;
+.imagegeof img{
+    width: 60%;
+    border-radius: 20%;
+}
+
+.metas-video {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 60vh; /* Ajuste a altura conforme necessário */
+}
+
+.metas-video iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 300%; /* Reduzir o tamanho do título em dispositivos menores */
+        background-color: aliceblue;
+        border-radius: 10%;
+    }
+
+    .imagegeof{
+        width: 100%;
+    }
+
+    p {
+        font-size: 150%; /* Reduzir o tamanho do texto em dispositivos menores */
+        border-radius: 10%;
+    }
+    .texto{
+        background-color: aliceblue;
+        border-radius:10%;
+    }
+
+    ul {
+        font-size: 150%; /* Reduzir o tamanho da lista em dispositivos menores */
+    }
+    .metas-video iframe{
+        width: 100%;
+        height: 70%;
+    }
 }
